@@ -1,12 +1,10 @@
 #
 # ~/.bash_profile
 #
-#Custom path variables:
-PATH=$HOME/.local/bin:$PATH
+# Custom path variables:
+PATH="$PATH:$HOME/.local/bin"
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
-
-#autostart X after login
+# autostart X after login
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 

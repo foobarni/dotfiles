@@ -6,14 +6,12 @@
 [[ $- != *i* ]] && return
 
 shopt -s autocd # cd without cd command
-shopt -s cdspell # ignore typos
-shopt -s expand_aliases
+shopt -s cdspell # ignore typos in cd command
 
 # History
 export HISTSIZE= 
 export HISTFILESIZE= 
-export HISTCONTROL=ignoreboth
-export HISTCONTROL="erasedups:ignorespace"
+export HISTCONTROL="erasedups:ignoreboth"
 #"incognito"
 alias incognito="set +o history" #temporarily disable
 alias nincognito="set -o history" #enable
